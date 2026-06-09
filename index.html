@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Boyfriend Recovery Center</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- PAGE 1 -->
+
+<div class="page active" id="page1">
+
+    <h1> BOYFRIEND RECOVERY CENTER </h1>
+
+    <img src="images/him-sick.png" class="sprite">
+
+    <div class="card">
+        <h2>‼️ EMERGENCY DETECTED ‼️</h2>
+
+        <p><strong>Status:</strong> "Head hurtyy "</p>
+
+       
+
+        <p><strong>HP:</strong> 13%</p>
+
+        <p>Emergency treatment required.</p>
+
+        <p>Reason: Headache + being missed very much.</p>
+    </div>
+
+    <button onclick="nextPage(2)">
+        START RECOVERY QUEST
+    </button>
+
+</div>
+
+
+<!-- PAGE 2 -->
+
+<div class="page" id="page2">
+
+    <h1> CHECKUP ROOM</h1>
+
+    <img src="images/him-sick.png" class="sprite">
+
+    <div class="card">
+
+        <p>Headache: YES</p>
+        <p>Needs Rest: YES</p>
+        <p>Too Cute: YES</p>
+        <p>Misses Girlfriend: Do you? hmmmm?? say YES</p>
+
+        <hr>
+
+        <h2>MANDATORY SMILE TEST</h2>
+
+        <button onclick="failSmile()">
+             Skip Smile Test (dont)
+        </button>
+
+        <button onclick="passSmile()">
+             Fineeeee I'll Smile
+        </button>
+
+        <p id="smileResult"></p>
+
+    </div>
+
+    <button onclick="nextPage(3)">
+        ➡ Continue Treatment
+    </button>
+
+</div>
+
+
+<!-- PAGE 3 -->
+
+<div class="page" id="page3">
+
+    <h1> MEDICINE ROOM</h1>
+
+    <img src="images/him-sick.png" class="sprite">
+
+    <h2 id="hpText">❤️ HP: 13%</h2>
+
+    <div class="healthbar">
+        <div id="fill"></div>
+    </div>
+
+    <div class="buttons">
+
+        <button onclick="heal(10)">
+             Kiss Medicine 😘
+        </button>
+
+        <button onclick="heal(15)">
+             Hug Medicine
+        </button>
+
+        <button onclick="heal(20)">
+             Love Injection (dont be scared)
+        </button>
+
+        <button onclick="heal(12)">
+             Recovery Soup(made by me)
+        </button>
+
+    </div>
+
+    <p id="message">
+        Begin treatment.
+    </p>
+
+</div>
+
+
+<!-- PAGE 4 -->
+
+<div class="page" id="page4">
+
+    <h1> YAYYYYY HEADACHE DEFEATED </h1>
+    <p> you are sooo strong babyy </p>
+
+    <div class="card">
+
+        <h2>Patient Successfully Healed</h2>
+
+        <p>HP: 100%</p>
+
+        <hr>
+
+        <h2> BILLING DEPARTMENT</h2>
+
+        <p>Kisses ........ FREE</p>
+        <p>Hugs ........ FREE</p>
+        <p>Love ........ FREE</p>
+        <p>Emergency Care ........ FREE</p>
+
+        <hr>
+
+        <h2>TOTAL DUE:</h2>
+
+        <p> 100 (minimum) smiling photos of yours </p>
+
+        <p>OR (send both) </p>
+
+        <p>cute voice note</p>
+
+        <hr>
+
+        <button onclick="payBill()">
+             PAY BILL
+        </button>
+
+        <p id="billMessage"></p>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
