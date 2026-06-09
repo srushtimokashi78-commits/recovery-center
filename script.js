@@ -77,7 +77,7 @@ function heal(amount){
     setTimeout(()=>{
 
     document.querySelector("#page3 .sprite").src =
-    "images/him.png";
+    "him.png";
 
     document.getElementById("message").innerHTML =
     "PATIENT HEALED! Looking much better alreadyyyy ";
